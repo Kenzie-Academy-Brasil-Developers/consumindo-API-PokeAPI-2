@@ -1,0 +1,64 @@
+@media (min-width: 750px) {
+  .search-area > input {
+    width: 400px;
+    height: 60px;
+  }
+  .search-area > input::placeholder {
+    font-size: 1.3rem;
+  }
+  .search-area > button {
+    height: 60px;
+    width: 100px;
+  }
+  .search-area > button > img {
+    width: 22px;
+  }
+  #List-title {
+    font-size: 2rem;
+  }
+  .pokemon-card {
+    height: 90px;
+  }
+  .pokemon-img {
+    width: 90px;
+    height: 90px;
+  }
+  .pokemon-name {
+    font-size: 1.5rem;
+  }
+  .logo {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .pokemon-card {
+    height: 60px;
+  }
+  .pokemon-name {
+    font-size: 1.2rem;
+  }
+  .pokemon-img {
+    width: 80px;
+    height: 80px;
+  }
+  header {
+    flex-direction: row;
+  }
+  .logo {
+    width: 20%;
+  }
+  .search-area > input {
+    width: 250px;
+    height: 40px;
+  }
+  .search-area > input::placeholder {
+    font-size: 14px;
+  }
+  .search-area > button {
+    height: 40px;
+    width: 80px;
+  }
+  .search-area > button > img {
+    width: 20px;
+  }
+}

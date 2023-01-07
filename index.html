@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="/src/styles/reset.css">
   <link rel="stylesheet" href="/src/styles/index.css">
   <link rel="shortcut icon" href="./src/assets/Pokeballicon.png">
+  <link rel="stylesheet" href="/src/styles/header.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  <link rel="stylesheet" href="./src/styles/MediaQuerry.css">
   <!-- Scripts -->
   <script src="/src/scripts/requests.js" defer></script>
   <script src="/src/scripts/index.js" defer type="module"></script>
@@ -18,7 +21,7 @@
 
 <body>
   <header>
-    <img id="AllPokemons" src="/src/assets/pokeapi.png" alt="PokeAPI Logo" id="logo">
+    <img id="AllPokemons" class="logo" src="/src/assets/pokeapi.png" alt="PokeAPI Logo">
     <div class="search-area">
       <input type="text" placeholder="Pesquisar por..." class="search-input">
       <button class="search-button"><img src="/src/assets/search-icon.png" alt="Search Button"></button>
@@ -29,14 +32,14 @@
     <h2 id="List-title">Lista de Pokémon</h2>
     <section class="container-card-list">
       <ul class="pokemon-card-list">
-        <li class="pokemon-card">
+        <!-- <li class="pokemon-card">
           <img src="/src/assets/PikachuTest.png" alt="" class="pokemon-img">
           <p class="pokemon-name">Pikachu</p>
         </li>
         <li class="pokemon-card">
           <img src="/src/assets/PikachuTest.png" alt="" class="pokemon-img">
           <p class="pokemon-name">Pikachu</p>
-        </li>
+        </li> -->
       </ul>
     </section>
   </main>

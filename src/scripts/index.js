@@ -6,25 +6,24 @@ async function render() {
   const listaDePokemons = await getAllPokemons()
 
   listaDePokemons.results.forEach(pokemon => {
-    const numeroNaPokedex = pokemon.url.slice(34, -1)
+    const pokedexNumber = pokemon.url.slice(34, -1)
 
     ulList.insertAdjacentHTML(
       "beforeend",
       `<li class="pokemon-card">
-      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${numeroNaPokedex}.png" alt="${pokemon.name}" class="pokemon-img">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokedexNumber}.png" alt="${pokemon.name}" class="pokemon-img">
       <p class="pokemon-name">${pokemon.name}</p>
     </li>
 `
     )
   })
 }
-render()
 
 function renderSearch() {
   const searchInput = document.querySelector(".search-input")
-  const searchBtn = document.querySelector(".search-button")
+  const searchButton = document.querySelector(".search-button")
 
-  searchBtn.addEventListener("click", () => {
+  searchButton.addEventListener("click", () => {
     getPokemonByName(searchInput.value.toLocaleLowerCase().trim())
   })
 }
@@ -38,5 +37,6 @@ async function renderAll() {
   })
 }
 
+render()
 renderSearch()
 await renderAll()

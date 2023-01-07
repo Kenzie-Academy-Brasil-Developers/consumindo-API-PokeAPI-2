@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 36px;
+  gap: 36px;
+}
+.logo {
+  width: 60%;
+}
+.search-area {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.search-area > input {
+  width: 233px;
+  height: 52px;
+  background-color: #343a40;
+  color: #7c8b99;
+  padding: 15px 24px;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.search-area > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 34px;
+  gap: 10px;
+  width: 86px;
+  height: 52px;
+  background: #4c6ef5;
+  border-radius: 8px;
+}
